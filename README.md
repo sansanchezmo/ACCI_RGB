@@ -3,7 +3,7 @@ Para hacer uso de nuestro algoritmo se requiere de una imagen en formato .png si
 Para mayor información de los métodos matemáticos utilizados para desarrollar la aplicación visite la sección [Project Information](https://github.com/sashhhita/ACCI_RGB/tree/main/Project%20Information).\
 Asimismo, para acceder al archivo .py del algoritmo, visite la sección [Python Prototipe](https://github.com/sashhhita/ACCI_RGB/tree/main/Python%20Prototype).
 ### Requerimientos Funcionales
-Para el desarrollo de la aplicación se utilizó una gran variedad de librerías de Python, de las cuales vale la pena destacar las 4 que tienen mayor influencia y relevancia sobre el funcionamiento del algoritmo, es decir, su us dentro de la aplicación es crucial:
+Para el desarrollo de la aplicación se utilizó una gran variedad de librerías de Python, de las cuales vale la pena destacar las 4 que tienen mayor influencia y relevancia sobre el funcionamiento del algoritmo, es decir, su uso dentro de la aplicación es crucial:
 #### Pillow
 ```python
 import pil
