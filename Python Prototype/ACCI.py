@@ -26,6 +26,7 @@ import sympy
 import random
 import sys
 import numpy as np
+import os
 
 #---Generación de la Semilla para la Clave A-----------------------------------#
 
@@ -387,43 +388,42 @@ fileName = input("Inserte el nombre del archivo\n")
 IMPORTANTE
   Las direcciones de los archivos pueden cambiar dependiendo del sistema
   operativo que se utilice. En caso de Windows, deberá importarse la librería
-  os, para conseguir una dirección específica cerca al archivo .py
+  pathlib, para conseguir una dirección específica cerca al archivo .py
 
   Por defecto, se creo una carpeta llamada content para el almacenamiento de
   los archivos.
 '''
 
-path = "/content/" + fileName + ".png"
-path2 = "/content/" + fileName + "Enc1.png"
-path3 = "/content/" + fileName + "Enc2.png"
-path4 = "/content/" + fileName + "Dec1.png"
-path5 = "/content/" + fileName + "Dec2.png"
+from pathlib import Path
+
+parent = str(Path(__file__).parent.absolute())
+
+path = parent + "/content/" + fileName + ".png"
+path2 = parent + "/content/" + fileName + "Enc1.png"
+path3 = parent + "/content/" + fileName + "Enc2.png"
+path4 = parent + "/content/" + fileName + "Dec1.png"
+path5 = parent + "/content/" + fileName + "Dec2.png"
 
 image = Image.open(path)
 
 ImageData = np.asarray(image)
-showImage(path)
 
 ImageEnc1 = cipherAImage(ImageData, AKey, gS2Key)
 ImageEnc1 = np.asarray(ImageEnc1)
 
 image2 = Image.fromarray(ImageEnc1.astype(np.uint8)).save(path2)
-showImage(path2)
 
 ImageEnc2 = cipherBImage(ImageEnc1, gBKey)
 ImageEnc2 = np.asarray(ImageEnc2)
 
 image3 = Image.fromarray(ImageEnc2.astype(np.uint8)).save(path3)
-showImage(path3)
 
 ImageDec1 = decipherAImage(ImageEnc2, AKey)
 ImageDec1 = np.asarray(ImageDec1)
 
 image4 = Image.fromarray(ImageDec1.astype(np.uint8)).save(path4)
-showImage(path4)
 
 ImageDec2 = decipherBImage(ImageDec1, gBKey, gS2Key)
 ImageDec2 = np.asarray(ImageDec2)
 
 image5 = Image.fromarray(ImageDec2.astype(np.uint8)).save(path5)
-showImage(path5)
