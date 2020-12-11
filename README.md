@@ -24,7 +24,7 @@ import numpy
 ### Desarrolladores
 Josué David Briceño Urquijo\
 *jbriceno@unal.edu.co*\
-***Estudiantes de Ingeniería de Sistemas y Computación***\
+***Estudiantes de Ingeniería de Sistemas y Computación***
 
 Santiago Sánchez Mora\
 *sansanchezmo@unal.edu.co*\
