@@ -6,7 +6,8 @@ Santiago Sánchez Mora\
 ***Estudiantes de Ingeniería de Sistemas y Computación*** 
 ### Supervisor
 Francisco Albeiro Gómez Jaramillo\
-***Docente de Matemáticas Discretas***
+***Docente asociado al Departamento de Matemáticas***\
+***PhD en Computer Science***
 
 > Universidad Nacional de Colombia ©\
 Facultad de Ingeniería
