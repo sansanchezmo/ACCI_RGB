@@ -8,7 +8,7 @@ Para el desarrollo de la aplicación se utilizó una gran variedad de librerías
 ```python
 import pil
 ```
-La librería Pillow es utilizada para obtener los vectores 3x1 de cada pixel de la imágen insertada, en donde la información de cada vector corresponde a los colres que forman el pixel con base en el modelo RGB.
+La librería Pillow es utilizada para obtener los vectores 3x1 de cada pixel de la imágen insertada, en donde la información de cada vector corresponde a los colores que forman el pixel con base en el modelo RGB.
 #### SymPy
 ```python
 import sympy
@@ -27,11 +27,11 @@ La mayoría de librerías previamente mencionadas utilizan Arrays en sus método
 ### Desarrolladores
 Josué David Briceño Urquijo\
 *jbriceno@unal.edu.co*\
-***Estudiantes de Ingeniería de Sistemas y Computación***
+***Estudiante de Ingeniería de Sistemas y Computación***
 
 Santiago Sánchez Mora\
 *sansanchezmo@unal.edu.co*\
-***Estudiantes de Ingeniería de Sistemas y Computación*** 
+***Estudiante de Ingeniería de Sistemas y Computación*** 
 
 ### Supervisor
 Francisco Albeiro Gómez Jaramillo\
