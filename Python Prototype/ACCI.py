@@ -383,10 +383,15 @@ secondKeyIteration(gTKey, gS1Key, BTKey)
 
 fileName = input("Inserte el nombre del archivo\n")
 
-# IMPORTANTE
-# Las direcciones de los archivos pueden cambiar dependiendo del sistema
-#   operativo que se utilice. En caso de Windows, deberá importarse la librería
-#   os, para conseguir una dirección específica cerca al archivo .py
+'''
+IMPORTANTE
+  Las direcciones de los archivos pueden cambiar dependiendo del sistema
+  operativo que se utilice. En caso de Windows, deberá importarse la librería
+  os, para conseguir una dirección específica cerca al archivo .py
+
+  Por defecto, se creo una carpeta llamada content para el almacenamiento de
+  los archivos.
+'''
 
 path = "/content/" + fileName + ".png"
 path2 = "/content/" + fileName + "Enc1.png"
